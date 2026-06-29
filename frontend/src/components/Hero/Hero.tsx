@@ -2,28 +2,40 @@ import heroPhoto from "../../assets/hero_photo.jpg";
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-stone-50 flex items-center justify-center px-6 py-16">
-            <div className="max-w-4xl text-center">
+        <section className="bg-white px-6 py-20">
+            <div className="mx-auto max-w-4xl text-center">
+
+                {/* Fotografía */}
                 <img
                     src={heroPhoto}
                     alt="Diác. Maximiliano Constante Cedillo"
-                    className="w-52 h-52 md:w-64 md:h-64 mx-auto rounded-3xl object-cover shadow-2xl mb-10"
+                    className="mx-auto mb-10 w-full max-w-sm rounded-3xl object-cover shadow-lg"
                 />
 
-                <p className="uppercase tracking-[0.35em] text-stone-500 text-xs md:text-sm mb-4">
-                    Ordenación Sacerdotal
+                {/* Título de la sección */}
+                <p className="mb-4 text-xs uppercase tracking-[0.35em] text-stone-500">
+                    Invitación
                 </p>
 
-                <h1 className="text-4xl md:text-6xl font-light text-stone-900 leading-tight mb-3">
-                    Diác. Maximiliano
-                    <br />
-                    Constante Cedillo
-                </h1>
+                {/* Invitación */}
+                <div className="space-y-8 text-lg leading-9 text-stone-700">
 
-                <p className="text-lg md:text-xl leading-8 text-stone-600 max-w-2xl mx-auto mb-10">
-                    Con inmensa alegría te invito a acompañarme en uno de los días
-                    más importantes de mi vida.
-                </p>
+                    <p>
+                        La Diócesis de Saltillo, el Seminario del Sagrado Corazón y la
+                        familia Constante Cedillo tienen el honor de invitarle a la{" "}
+                        <strong>Santa Misa de Ordenación Sacerdotal</strong> del diácono{" "}
+                        <strong>Maximiliano Constante Cedillo</strong>.
+                    </p>
+
+                    <p>
+                        Quien, por la imposición de manos y la oración consecratoria de{" "}
+                        <strong>Mons. Hilario González García</strong>, Obispo de Saltillo,
+                        será ordenado presbítero para gloria de Dios y servicio de su
+                        Pueblo Santo.
+                    </p>
+
+                </div>
+
             </div>
         </section>
     );
